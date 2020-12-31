@@ -1,0 +1,314 @@
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+body {
+  min-width: 960px;
+  height: max;
+}
+
+
+.header {
+  position: fixed;
+  width: 960px;
+  height: 66px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  white-space: nowrap;
+}
+
+
+.header__left {
+  padding: 10px 0;
+  padding-right: 100px;
+}
+
+
+.header__logo {
+  width: 165px;
+}
+
+
+.header__right {
+  padding: 10px 0;
+  margin: 0 0 0 auto;
+}
+
+
+.header__link {
+  font-size: 16px;
+  padding-right: 12px;
+  text-decoration: none;
+  color: #444444;
+}
+
+
+.index {
+  margin: 0 auto;
+}
+
+
+.section--top,
+.section {
+  width: 960px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+
+
+.section--top {
+  padding: 0;
+}
+
+
+.section--gray {
+  background: #7E8A97;
+  height: 400px;
+}
+
+
+.container {
+  width: 100%;
+}
+
+
+.container--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+
+.container__right {
+  padding-left: 138px;
+}
+
+
+.container__left {
+  padding: 100px 0;
+}
+
+
+.container__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+
+
+.container__item {
+  width: 220px;
+}
+
+
+.container__img {
+  padding: 50px 0;
+}
+
+
+.container__img--payment {
+  padding: 50px 0;
+  text-align: center;
+}
+
+
+.container__img--isometric {
+  padding-left: 104px;
+  padding-top: 21px;
+}
+
+
+.container__recommend {
+  width: 756px;
+  height: 288px;
+  border-radius: 25px;
+  background: #fff;
+  border: 5px solid #ff8585;
+  margin: 0 auto;
+}
+
+
+.container__list {
+  padding: 10px 0;
+}
+
+
+.container__list:first-child {
+  padding-top: 50px;
+}
+
+
+.container__list:last-child {
+  padding-bottom: 50px;
+}
+
+
+.container__question {
+  padding: 16px 32px;
+  background: #7E8A97;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+
+.container__answer {
+  padding: 16px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #444444;
+}
+
+
+.heading--big,
+.heading--center,
+.heading--sub,
+.heading {
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #444;
+}
+
+
+.heading--big {
+  font-weight: 500;
+  font-size: 50px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #444;
+  padding-bottom: 40px;
+}
+
+
+.heading--center {
+  text-align: center;
+}
+
+
+.heading--sub {
+  font-weight: normal;
+  font-size: 32px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #444;
+  padding-bottom: 32px;
+}
+
+
+.text--top,
+.text--mini,
+.text--center,
+.text--white,
+.text {
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 38px;
+  text-align: left;
+  color: #444;
+}
+
+
+.text--top {
+  padding-bottom: 40px;
+}
+
+
+.text--mini {
+  padding-top: 44px;
+  text-align: center;
+  letter-spacing: 0.72px;
+  line-height: 28px;
+}
+
+
+.text--center {
+  text-align: center;
+  padding-top: 32px;
+}
+
+
+.text--white {
+  color: #fff;
+}
+
+.footer {
+  width: 100%;
+  background: #30475E;
+}
+
+.footer__inner {
+  width: 960px;
+  margin: 0 auto;
+  padding: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 25px;
+}
+
+.footer__heading {
+  color: white;
+  padding-bottom: 22px;
+}
+
+.footer__heading--small {
+  font-size: 13px;
+  color: white;
+  padding-bottom: 32px;
+}
+
+.footer__text {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  line-height: 29px;
+  text-align: left;
+  color: #fff;
+}
+
+.footer__text--bottom {
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer__link {
+  font-size: 13px;
+  padding-bottom: 5px;
+  text-align: left;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__bottom {
+  height: 66px;
+  padding: 23.5px 0;
+  background: #7E8A97;
+}
+/*# sourceMappingURL=index.css.map */
