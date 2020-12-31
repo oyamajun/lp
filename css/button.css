@@ -2,6 +2,7 @@
 .button--small,
 .button--white,
 .button--small-white,
+.button--center,
 .button {
   font-weight: bold;
   font-size: 16px;
@@ -41,5 +42,10 @@
   background: white;
   color: #FF8585;
   border: 1px solid #FF8585;
+}
+
+
+.button--center {
+  margin-top: 32px;
 }
 /*# sourceMappingURL=button.css.map */
