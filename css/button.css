@@ -1,8 +1,5 @@
 
 .button--small,
-.button--white,
-.button--small-white,
-.button--center,
 .button {
   font-weight: bold;
   font-size: 16px;
@@ -12,10 +9,9 @@
   line-height: 56px;
   text-align: center;
   display: inline-block;
-  background: #FF8585;
-  color: white;
+  color: #FF8585;
   text-decoration: none;
-  border-radius: 50px;
+  border: 1px solid #FF8585;
 }
 
 
@@ -26,26 +22,10 @@
   line-height: 40px;
 }
 
-
-.button--white {
-  background: white;
-  color: #FF8585;
-  border: 1px solid #FF8585;
-}
-
-
-.button--small-white {
-  width: 112px;
-  height: 40px;
-  margin-right: 12px;
-  line-height: 40px;
-  background: white;
-  color: #FF8585;
-  border: 1px solid #FF8585;
-}
-
-
-.button--center {
-  margin-top: 32px;
+@media (max-width: 480px) {
+  
+  .button--small {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=button.css.map */

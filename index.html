@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/button.css">
   <title>tunageru</title>
@@ -24,7 +25,7 @@
       <a href="" class="header__link">tunageruの特徴</a>
       <a href="" class="header__link">ご購入までの流れ</a>
       <a href="" class="header__link">よくある質問</a>
-      <a href="" class="button--small-white" target="blank">ログイン</a>
+      <a href="" class="button--small" target="blank">ログイン</a>
       <a href="" class="button--small" target="blank">会員登録</a>
     </div>
   </header>
@@ -34,14 +35,20 @@
 
   <div class="index">
     <section class="section--top">
-      <div class="container--flex">
+      <div class="container--flex-reverse">
         <div class="container__left">
           <h2 class="heading--big">誰にでも手軽に</br>良質な国産生地を</h2>
           <p class="text--top">幅広い方に、良質な国産生地をご購入いただけます。</p>
-          <a href="" class="button--white">ログイン</a>
-          <a href="" class="button">新規会員登録</a>
+          <div class="container__button-pc">
+            <a href="" class="button">ログイン</a>
+            <a href="" class="button">新規会員登録</a>
+          </div>
+          <div class="container__button-sp">
+            <a href="" class="button--small">ログイン</a>
+            <a href="" class="button--small">新規会員登録</a>
+          </div>
         </div>
-        <div class="container__img--isometric"><img src="isometric.png" alt="image"></div>
+        <div class="container__isometric-pc"><img src="isometric.png" alt="image"></div><div class="container__isometric-sp"><img src="isometric.png" alt="image"width="300px"></div>
       </div>
 
     </section>
@@ -67,163 +74,86 @@
     <section class="section">
       <div class="container">
         <h2 class="heading">FEATURE</h2>
-        <div class="container__inner">
-          <div class="container__item">
-            <h3 class="heading--sub">1選択肢の多さ</h3>
-            <p class="text">tunageruは国内の工場が
-              多数サプライヤー様として
-              生地を販売しています。
-              幅広い選択肢から生地を
-              選ぶことができます。</p>
-          </div>
-          <div class="container__item">
-            <h3 class="heading--sub">2誰でも買える</h3>
-            <p class="text">サプライヤー様とバイヤー様は
-              tunageruを介して直接取引を
-              行います。そのため従来の方法
-              でのバイヤーへのマージンが
-              なく安く生地を購入できます。</p>
-          </div>
-          <div class="container__item">
-            <h3 class="heading--sub">3高品質</h3>
-            <p class="text">tunageruで登録されている
-              サプライヤー様の多数が
-              国内工場です。そのため
-              誰にでも高品質な国産生地を
-              ご購入いただけます。</p>
-          </div>
+
+        <div class="container__item">
+          <h3 class="heading--sub">選択肢の多さ</h3>
+          <p class="text">tunageruは国内の工場が
+            多数サプライヤー様として
+            生地を販売しています。</br>
+            幅広い選択肢から生地を
+            選ぶことができます。</p>
         </div>
+        <div class="container__item">
+          <h3 class="heading--sub">誰でも買える</h3>
+          <p class="text">サプライヤー様とバイヤー様は
+            tunageruを介して直接取引を
+            行います。</br>そのため従来の方法
+            でのバイヤーへのマージンが
+            なく安く生地を購入できます。</p>
+        </div>
+        <div class="container__item">
+          <h3 class="heading--sub">高品質</h3>
+          <p class="text">tunageruで登録されている
+            サプライヤー様の多数が
+            国内工場です。</br>そのため
+            誰にでも高品質な国産生地を
+            ご購入いただけます。</p>
+        </div>
+
       </div>
     </section>
     <section class="section">
       <div class="container">
         <h2 class="heading">CATEGORY</h2>
-        <div class="container__img"><img src="category.png" alt="category"></div>
-        <p class="text">完全別注1点物のセレクト商材や、在庫あり即出荷可能の商材、特殊ルートによる商材など、数多にわたるサプライヤーから、お客様の用途に合わせた調達が可能です。</p>
+        <div class="container__img-pc"><img src="category.png" alt="category"></div>
+        <div class="container__img-sp"><img src="category.sp.png" alt="category"></div>
+        <p class="text">完全別注1点物のセレクト商材や、在庫あり即出荷可能の商材、</br>特殊ルートによる商材など、数多にわたるサプライヤーから、</br>お客様の用途に合わせた調達が可能です。</p>
       </div>
     </section>
     <section class="section">
       <div class="container">
-        <h2 class="heading--center">
+        <h2 class="heading">
           ご購入までの流れ
         </h2>
-        <div class="container__img"><img src="floar.png" alt="floar"></div>
+        <div class="container__img-pc"><img src="floar.png" alt="floar"></div>
+        <div class="container__img-sp"><img src="floar.sp.png" alt="floar"></div>
     </section>
     <section class="section">
       <div class="container">
-        <h2 class="heading--center">
+        <h2 class="heading--sub">
           お支払方法
         </h2>
-        <p class="text--center">
+        <p class="text">
           お支払方法については現在準備中です。
         </p>
-        <p class="text--center">
+        <p class="text">
           バイヤー様のお手元に商品が届くまで、</br>
           お金が先にサプライヤー様に支払われることはありません
         </p>
-        <div class="container__img--payment"><img src="payment.png" alt="payment"></div>
+        <div class="container__img-pc"><img src="payment.png" alt="payment"></div>
+        <div class="container__img-sp"><img src="payment.sp.png" alt="payment"></div>
       </div>
 
     </section>
-    <section class="section">
-      <div class="container">
-        <div class="container__recommend">
-          <h2 class="heading--center">tunageruを始めてみませんか?</h2>
-          <p class="text--center">登録費無料ですぐに利用できます</p>
-          <a href="" class="button--center">サプライヤー登録</a>
-          <a href="" class="button--center">バイヤー登録</a>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <h2 class="heading">
-        よくあるご質問
-      </h2>
-      <div class="container">
-        <div class="container__list">
-          <div class="container__question">
-            <h2></h2>
-            <p class="text--white">個人での利用もできますか？</p>
-          </div>
-          <div class="container__answer">
-            <h2></h2>
-            <p class="text">
-              tunageru（つなげる）は個人の事業主の方であれば、どなたでもご利用いただけます。</p>
-          </div>
-        </div>
-        <div class="container__list">
-          <div class="container__question">
-            <h2></h2>
-            <p class="text--white">繊維、ファッション業界に属していなくても登録できますか</p>
-          </div>
-          <div class="container__answer">
-            <h2></h2>
-            <p class="text">特に業界の制限はございません。</p>
-          </div>
-        </div>
-        <div class="container__list">
-          <div class="container__question">
-            <h2></h2>
-            <p class="text--white">個人での利用もできますか？</p>
-          </div>
-          <div class="container__answer">
-            <h2></h2>
-            <p class="text">tunageru（つなげる）は個人の事業主の方であれば、どなたでもご利用いただけます。</p>
-          </div>
-        </div>
-        <div class="container__list">
-          <div class="container__question">
-            <h2></h2>
-            <p class="text--white">支払い方法は何がありますか？</p>
-          </div>
-          <div class="container__answer">
-            <h2></h2>
-            <p class="text">クレジットカード、掛け払い、銀行振込がございます。</p>
-          </div>
-        </div>
-        <div class="container__list">
-          <div class="container__question">
-            <h2></h2>
-            <p class="text--white">利用料金はかかりますか？</p>
-          </div>
-          <div class="container__answer">
-            <h2></h2>
-            <p class="text">初期登録費、月額固定費無料でご利用いただけます。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- フッター -->
-    <footer class="footer">
-      <div class="footer__inner">
-        <div class="footer__left">
-          <h2 class="footer__heading">
-            tunageru
-          </h2>
-          <h2 class="footer__heading--small">
-            D-PLUS TRADING CO.,LTD.
-          </h2>
-          <p class="footer__text">
-            〒541-0053
-          </p>
-          <p class="footer__text">
-            大阪市中央区本町4-2-12
-          </p>
-          <p class="footer__text">
-            野村不動産御堂筋本町ビル8F billage OSAKA
-          </p>
-        </div>
-        <div class="footer__right">
-          <a href="" class="footer__link">会社概要</a>
-          <a href="" class="footer__link">プライバシーポリシー</a>
-          <a href="" class="footer__link">利用規約</a>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p class="footer__text--bottom">© 2020 Copyright: d-plustrading co.,ltd.</p>
-      </div>
-    </footer>
   </div>
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <h2 class="footer__text">
+          tunageru
+        </h2>
+      </div>
+      <div class="footer__right">
+        <a href="" class="footer__link">company</a>
+        <a href="" class="footer__link">privacy poricy</a>
+        <a href="" class="footer__link">Terms of service</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__text--bottom">© 2020 Copyright: d-plustrading co.,ltd.</p>
+    </div>
+  </footer>
 
 
 </body>

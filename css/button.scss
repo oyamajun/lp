@@ -1,0 +1,46 @@
+$pc: 1024px; // PC
+$tab: 680px; // タブレット
+$sp: 480px; // スマホ
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+%button,
+.button {
+  font-weight: bold;
+  font-size: 16px;
+  width: 200px;
+  height: 56px;
+  margin-right: 20px;
+  line-height: 56px;
+  text-align: center;
+  display: inline-block;
+  color: #FF8585;
+  text-decoration: none;
+  border: 1px solid #FF8585;
+  
+  &--small {
+    @extend %button;
+    width: 112px;
+    height: 40px;
+    margin-right: 12px;
+    line-height: 40px;
+    @include sp(){
+      font-size: 14px;
+    }
+  }
+}

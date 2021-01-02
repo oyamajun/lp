@@ -1,0 +1,441 @@
+$pc: 1024px; // PC
+$tab: 680px; // タブレット
+$sp: 480px; // スマホ
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 100%;
+}
+
+body {
+  min-width: 960px;
+  height: max;
+  font-family: "Noto Sans CJK JP";
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+
+  @include sp() {
+    min-width: 320px;
+    margin: 0;
+  }
+}
+
+
+
+// ヘッダー
+
+%header,
+.header {
+  position: fixed;
+  width: 960px;
+  height: 66px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  white-space: nowrap;
+
+  @include sp() {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  &__left {
+    padding: 10px 0;
+    padding-right: 100px;
+  }
+
+  &__logo {
+    width: 165px;
+
+    @include sp() {
+      width: 123.66px;
+    }
+  }
+
+  &__right {
+    padding: 10px 0;
+    margin: 0 0 0 auto;
+
+    @include sp() {
+      display: none;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    padding-right: 12px;
+    text-decoration: none;
+    color: #444444;
+  }
+
+}
+
+// メインコンテンツ
+%index,
+.index {
+  margin: 0 auto;
+
+  @include sp() {
+    width: 100%;
+  }
+}
+
+%section,
+.section {
+  width: 960px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+
+  @include sp() {
+    width: 100%;
+    padding: 50px 20px
+  }
+
+  &--top {
+    @extend %section;
+    padding: 100px 0;
+
+    @include sp() {
+      width: 100%;
+      padding-top: 50px;
+      padding: 0  20px;
+    }
+  }
+}
+
+%container,
+.container {
+  width: 100%;
+
+  &--flex {
+    display: flex;
+
+    @include sp() {
+      flex-direction: column;
+    }
+  }
+
+  &--flex-reverse {
+    display: flex;
+
+    @include sp() {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__button-pc {
+    display: block;
+
+    @include sp() {
+      display: none;
+    }
+  }
+
+  &__button-sp {
+    display: none;
+
+    @include sp() {
+      display: block;
+    }
+  }
+
+  &__right {
+    padding-left: 138px;
+
+    @include sp() {
+      padding: 0;
+    }
+  }
+
+  &__left {
+    @include sp() {}
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+
+    @include sp() {
+      padding-top: 25px;
+    }
+  }
+
+  &__img-sp {
+    display: none;
+
+    @include sp() {
+      display: block;
+      padding: 50px 0;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    padding-top: 100px;
+
+    @include sp() {
+      padding-top: 50px;
+    }
+  }
+
+  &__img-pc {
+    padding: 100px 0;
+
+    @include sp() {
+      display: none;
+    }
+  }
+  &__isometric-pc{
+    padding-left: 104px;
+    padding-top: 21px;
+    @include sp() {
+      display: none;
+    }
+  }
+  &__isometric-sp{
+    display: none;
+    @include sp(){
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__recommend {
+    width: 756px;
+    padding: 32px 0;
+    border-radius: 25px;
+    background: #fff;
+    border: 5px solid #ff8585;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+  }
+
+  &__faq {
+    display: none;
+    padding: 10px 0;
+
+    &:first-child {
+      padding-top: 50px;
+    }
+
+    &:last-child {
+      padding-bottom: 50px;
+    }
+  }
+
+  &__question {
+    padding: 16px 32px;
+    background: #7E8A97;
+    display: flex;
+    align-items: center;
+    border-radius: 25px 25px 0 0;
+
+    &::before {
+      content: 'Q';
+      color: #fff;
+      font-size: 32px;
+      padding-right: 32px;
+    }
+  }
+
+  &__answer {
+
+    padding: 16px 32px;
+    display: flex;
+    border: 1px solid #444444;
+    align-items: center;
+    border-radius: 0 0 25px 25px;
+
+    &::before {
+      content: 'A';
+      color: #FF8585;
+      font-size: 32px;
+      padding-right: 32px;
+
+    }
+  }
+}
+
+%heading,
+.heading {
+  font-weight: 300;
+  font-size: 32px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #444;
+
+  @include sp() {
+    font-size: 25px;
+    line-height: 50px;
+  }
+
+  &--big {
+    @extend %heading;
+
+    padding-bottom: 50px;
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 0.14em;
+    line-height: 64px;
+    text-align: left;
+    color: #444;
+
+    @include sp() {
+      padding-bottom: 25px;
+    }
+  }
+
+  &--center {
+    @extend %heading;
+    text-align: center;
+  }
+
+  &--sub {
+    @extend %heading;
+    font-family: "Noto Sans CJK JP";
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 0.04em;
+    line-height: 33px;
+    color: #444;
+    padding-bottom: 50px;
+
+    @include sp() {
+      padding-bottom: 25px;
+      font-size: 25px;
+    }
+
+  }
+}
+
+
+
+%text,
+.text {
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 38px;
+  text-align: left;
+  color: #444;
+
+  @include sp() {
+    font-size: 14px;
+    line-height: 28px;
+    word-break: keep-all;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+  }
+
+  &--top {
+    @extend %text;
+    padding-bottom: 50px;
+
+    @include sp() {
+      padding-bottom: 25px;
+    }
+  }
+
+  &--mini {
+    @extend %text;
+    padding-top: 50px;
+    text-align: center;
+    letter-spacing: 0.72px;
+    line-height: 28px;
+  }
+
+  &--white {
+    @extend %text;
+    color: #fff;
+  }
+}
+
+// フッター
+
+.footer {
+
+  background: #30475E;
+  width: 100%;
+
+
+  &__inner {
+    width: 960px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+
+    @include sp() {
+      width: 320px;
+      padding: 50px 20px;
+    }
+  }
+
+  &__left {}
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    line-height: 33px;
+    text-align: left;
+    color: #fff;
+    margin: 0;
+
+    @include sp() {
+      font-size: 14px;
+      line-height: 28px;
+    }
+
+    &--bottom {
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+
+      @include sp() {
+        font-size: 14px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    padding-bottom: 5px;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &__bottom {
+    padding: 27px 0;
+    background: #30475E;
+  }
+}
